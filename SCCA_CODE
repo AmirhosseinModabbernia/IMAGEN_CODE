@@ -96,7 +96,7 @@ ggplot(plotdf, aes(x=Components, y=Variance_Explained)) +
 #permutation testing and p-value calculation
 numCores <- detectCores()
 perm<-1:1000
-corperm_mat<-matrix(0,1000,10)
+corperm_mat<-matrix(0,1000,5)
 set.seed(123)
 permfunc<-function(perm) {
   sampperm<-sample(nrow(temppsych$Y1),replace=F)
